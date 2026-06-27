@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Makivan Consultants</title>
+    <link rel="icon" type="image/jpg" href="images/makivanlogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+    <a href="home.html" class="logo"><img src="images/makivanlogo.jpg" alt="Makivan Consultant Logo"></a>
+    <h1 class="company-name"><a href="home.html">Makivan Consultants</a></h1>
+    
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    
+    <div class="navmenu" id="navmenu">
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="download.html"><i class="fas fa-download"></i>Resources</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+
+    <!-- Contact Page Heading Section -->
+    <section class="page-header">
+        <div class="header-container">
+            <h1 class="page-title" data-aos="fade-up">Contact Us</h1>
+            <div class="title-underline" data-aos="fade-up" data-aos-delay="200"></div>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="300">Get in touch with us today. We're here to help your business succeed.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section" data-aos="fade-up">
+        <div class="contact-info-container">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>+254 721 433 584</p>
+                <p>+254 718 950 180</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <a href="mailto:info@makivanconsultants.co.ke">info@makivanconsultants.co.ke</a>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Location</h3>
+                <p>Nairobi, Kenya</p>
+                <p>Ongata Rongai, Kenya</p>
+            </div>
+            <div class="info-card" data-aos="fade-up">
+    <div class="info-icon">
+        <i class="fas fa-file-download"></i>
+    </div>
+    <h3>Download Forms</h3>
+    <p>Need our registration forms? Download them instantly.</p>
+    <a href="download.html#download" style="display: inline-block; margin-top: 15px; color: #555e07; font-weight: bold;">
+        Click Here <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" data-aos="fade-up">
+        <div class="contact-form-container">
+            
+            <!-- Form Wrapper -->
+            <div class="form-wrapper" id="consultation">
+                <h2>Send Us a Message</h2>
+                
+                <!-- Message display area for success/error/warning -->
+                <div id="messageBox" style="display: none;"></div>
+                
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name">
+                            <small class="error-message" id="nameError"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email">
+                            <small class="error-message" id="emailError"></small>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone">
+                        <small class="error-message" id="phoneError"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In *</label>
+                        <select id="service" name="service">
+                            <option value="" disabled selected>— Select a service —</option>
+                            <option value="Taxation Services">Taxation Services</option>
+                            <option value="Business Registration">Business Registration</option>
+                            <option value="Small Business & Personal Loans">Small Business & Personal Loans</option>
+                            <option value="Real Estate">Real Estate</option>
+                            <option value="Human Resource Services">Human Resource Services</option>
+                            <option value="Counseling Services">Counseling Services</option>
+                            <option value="Mentoring & Leadership Training">Mentoring & Leadership Training</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <small class="error-message" id="serviceError"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                        <small class="error-message" id="messageError"></small>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Hours Wrapper -->
+            <div class="hours-wrapper">
+                <h2>Business Hours</h2>
+                <div class="hours-list">
+                    <div class="hour-item">
+                        <span class="day">Monday - Friday:</span>
+                        <span class="time">8:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Saturday:</span>
+                        <span class="time">9:00 AM - 1:00 PM</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Sunday:</span>
+                        <span class="time">Closed</span>
+                    </div>
+                </div>
+
+                <div class="emergency-contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>Emergency/Urgent Inquiries?</p>
+                    <a href="tel:+254721433584">Call +254 721 433 584</a>
+                    <br><br>
+                    <a href="tel:+254718950180">Call +254 718 950 180</a>
+                </div>
+
+                <div class="social-links">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" id="whatsappLiveChatBtn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" data-aos="fade-up">
+        <div class="map-container">
+            <h2 class="section-title">Visit Our Office</h2>
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Serving Nairobi & Ongata Rongai, Kenya</p>
+                <small>Contact us for office appointment</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="contact-quote-section" data-aos="fade-up">
+        <div class="contact-quote-container">
+            <i class="fas fa-quote-left"></i>
+            <p>Your success is our business</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<section class="footer-section">
+    <div class="footer-main-container">
+        <div class="footer-grid">
+            
+            <!-- Company Info Column -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/makivanlogo.jpg" alt="Makivan Consultants Logo">
+                    <h3>Makivan Consultants</h3>
+                </div>
+                <p class="footer-description">Professional Business Consultancy Services in Nairobi, Ongata Rongai, and across East Africa. Your success is our business!</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    
+                    
+                </div>
+            </div>
+            
+            <!-- Quick Links Column -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="home.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="download.html"><i class="fas fa-chevron-right"></i>Resources</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Our Services Column - Clickable Links -->
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html#taxation"><i class="fas fa-chevron-right"></i> Taxation Services</a></li>
+                    <li><a href="services.html#business"><i class="fas fa-chevron-right"></i> Business Registration Services</a></li>
+                    <li><a href="services.html#others"><i class="fas fa-chevron-right"></i> Other Business Services</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info Column -->
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+254721433584">+254 721 433 584</a></li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+254718950180">+254 718 950 180</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@makivanconsultants.co.ke">info@makivanconsultants.co.ke</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi & Ongata Rongai, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Copyright Row -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Makivan Consultants. All rights reserved.</p>
+            <p class="footer-tagline">Your success is our business!</p>
+        </div>
+    </div>
+</section>
+<div class="live-chat-widget">
+        <a href="#" id="whatsappLiveChatBtn" class="live-chat-button" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>Live Chat</span>
+        </a>
+</div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        AOS.init(); 
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
